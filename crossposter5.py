@@ -145,7 +145,7 @@ r/Woahdude flairs
 now = datetime.datetime.now()
 today = str(now.strftime("%d/%m"))
 
-if __name__ == "__main__" and today == ("30/04"):
+if __name__ == "__main__":
     
     postId = Submission (
         Title = 'A bandit wasp close-up',
@@ -153,14 +153,14 @@ if __name__ == "__main__" and today == ("30/04"):
         Url = 'wasp.jpg'
             )
         
-    crossPost1Id = crossPost(
-        subredditName = 'Discoverearthama',
-        submissionPostId = postId,
-        title= 'xpost from discovereath Fuego Volcano & Milky Way by u/Furfural'
-            )
-    addComment(crossPost1Id,
-        'Source: Shauns Wildlife Photography on Flickr: https://www.flickr.com/photos/shaundickinson/6185074831/'
-            )
+#    crossPost1Id = crossPost(
+#        subredditName = 'Discoverearthama',
+#        submissionPostId = postId,
+#        title= 'xpost from discovereath Fuego Volcano & Milky Way by u/Furfural'
+#            )
+#    addComment(crossPost1Id,
+#        'Source: Shauns Wildlife Photography on Flickr: https://www.flickr.com/photos/shaundickinson/6185074831/'
+#            )
         
     crossPost2Id = crossPost(
         subredditName = 'discoverearthama',
@@ -172,31 +172,6 @@ if __name__ == "__main__" and today == ("30/04"):
     addComment(crossPost2Id,
         'Source: Shauns Wildlife Photography on Flickr: https://www.flickr.com/photos/shaundickinson/6185074831/'
                    )
-
-if __name__ == "__main__" and today == ("29/07"):
-    
-    postId = Submission (
-        Title = 'Under the Moon (by @shadowkuo_photography on Insta)',
-        subreddit = 'earthmind',
-        Url = 'moon.jpg'
-            )
-        
-    crossPost1Id = crossPost(
-        subredditName = 'interestingasfuck',
-        submissionPostId = postId,
-        title= 'Under the Moon (by @shadowkuo_photography on Insta)'
-            )
-    addComment(crossPost1Id,
-        'Source: @shadowkuo_photography on Instagram)'
-            )
-        
-    crossPost2Id = crossPost(
-        subredditName = 'woahdude',
-        submissionPostId = postId,
-        title= 'Under the Moon (by @shadowkuo_photography on Insta)',
-        flair_text= 'pic',
-        flair_number = '0'
-            )
 
 
 print ('Done!')
